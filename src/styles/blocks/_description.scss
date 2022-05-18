@@ -1,0 +1,33 @@
+.description {
+  margin: 105px auto 120px;
+
+}
+
+.description-inner {
+  @include inner;
+}
+
+.description-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-text-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-right: 71px;
+}
+
+.description-figure-wrap {
+  display: flex;
+}
+
+.div-figure {
+  position: absolute;
+  width: 833.87px;
+  height: 782px;
+  left: 980.12px;
+  top: 270px;
+  background-color: $purple;
+  border-radius: 120px;
+}
