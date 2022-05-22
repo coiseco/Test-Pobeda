@@ -22,12 +22,25 @@
   display: flex;
 }
 
-.div-figure {
-  position: absolute;
-  width: 833.87px;
-  height: 782px;
-  left: 980.12px;
-  top: 270px;
-  background-color: $purple;
-  border-radius: 120px;
+.figure{
+  width: 833px;
+  height:750px;
+  border-radius: 50%/10%;
+  background: red;
+  position: relative;
+
+  &::after{
+    content: "";
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: -5%;
+    left: -5%;
+    background: black;
+    border-radius: 5%/50%;
+  }
+
+
 }
+
+
