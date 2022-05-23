@@ -13,16 +13,16 @@
   <div class="header-inner">
     <div class="header-wrap">
       <div class="header-logo">
-        <a href="#" class="header-link"><img src="images/logo.png" alt="" class="header-logo-img"></a>
+        <a href="#"  class="header-link"><img src="images/logo.png" alt="" class="header-logo-img"></a>
       </div>
       <div class="header-menu">
         <ul class="menu">
           <li class="menu-item ">
-            <a href="#" class="menu-link j-menu-link active-link">Home</a>
+            <a href="#"  class="menu-link j-menu-link active-link">Home</a>
             <span class="hidden-border j-hidden-border active"></span>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link j-menu-link">Contact</a>
+            <a href="#" id="contacts" class="menu-link j-menu-link">Contact</a>
             <span class="hidden-border j-hidden-border"></span>
           </li>
           <li class="menu-item">
@@ -69,7 +69,7 @@
   <section class="works">
     <div class="works-inner">
       <div class="works-wraper">
-        <a href="#" class="play-button"><img src="images/button.png" alt="" class="button-img"></a>
+        <a href="#"  class="play-button"><img src="images/button.png" alt="" class="button-img"></a>
         <div class="works-text-wraper">
           <h2 class="works-title">How it works</h2>
           <span class="works-text">Spice up your space even simpler <br>
@@ -82,7 +82,7 @@
               for commercial building, <br>
               interior and furniture to improve <br>
               the better life. </span>
-            <a href="#" class="works-media-link">see video</a>
+            <a href="#" id="callback-button" class="works-media-link">see video</a>
           </div>
         </div>
       </div>
@@ -182,36 +182,45 @@
   </section>
   <section class="contact-us">
     <div class="contact-us-inner">
-      <div class="contact-us-description">
-        <h2 class="contact-us-title">Contact Us</h2>
-        <span class="contact-us-text">Have any questions? Want help
-          before getting started?</span>
-        <span class="contact-us-line"></span>
-        <span class="contact-us-line"></span>
-      </div>
-      <div class="form-wrap">
-        <form action="post" class="form">
-          <div class="form-field">
-            <label for="name" class="form-label"></label>
-            <input id="name" name="name" type="text" class="form-input">
-          </div>
-          <div class="form-field">
-            <label for="phone" class="form-label"></label>
-            <input id="phone" name="phone" type="phone" class="form-input">
-          </div>
-          <div class="form-field">
-            <label for="" class="form-label"></label>
-            <textarea name="" id=""   class="form-textarea"></textarea>
-          </div>
-          <div class="form-field">
-            <button class="btn btn-form" type="submit">Отправить</button>
-          </div>
-        </form>
+      <div class="contact-wraper">
+        <div class="contact-us-description">
+          <h2 class="contact-us-title">Contact Us</h2>
+          <span class="contact-us-text">Have any questions? Want help <br>
+            before getting started?</span>
+          <span class="contact-us-line"></span>
+          <span class="contact-us-line"></span>
+        </div>
+        <div class="form-wrap">
+          <form action="post" class="form">
+            <div class="form-field">
+              <label for="name" class="form-label">Full name</label>
+              <input id="name" name="name" type="text" class="form-input">
+            </div>
+            <div class="form-field">
+              <label for="phone" class="form-label">Phone</label>
+              <input id="phone" name="phone" type="phone" class="form-input">
+            </div>
+            <div class="form-field field-half">
+              <label for="message" class="last-label">Description</label>
+              <textarea name="message" id="message"   class="form-textarea"></textarea>
+              </div>
+            <div class="form-field field-half btn-field ">
+              <button class="button btn-form" type="submit">send now</button>
+            </div>
+
+          </form>
+        </div>
       </div>
     </div>
   </section>
 </main>
-
+<div class="modal" id="modal-1">
+  <div class="modal__content">
+    <button class="modal__close-button"><img src="./images/close.svg" width="12" alt=""></button>
+    <h1 class="modal__title">Контент для примера</h1>
+    <p class="modal__description">Тут должно быть видео</p>
+  </div>
+</div>
 </body>
 <script src="scripts/jquery-3.6.0.min.js"></script>
 <script src="scripts/script.js"></script>
