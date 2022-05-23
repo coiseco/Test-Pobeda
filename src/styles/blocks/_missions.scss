@@ -1,0 +1,35 @@
+.mission {
+  margin: 150px 0 120px;
+}
+
+.mission-inner {
+  @include inner;
+}
+
+.mission-wraper {
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+}
+
+.mission-text-wraper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 142px;
+}
+
+.mission-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: $dark;
+  -webkit-text-stroke: 1px black;
+}
+
+.mission-text {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  color: $green;
+}

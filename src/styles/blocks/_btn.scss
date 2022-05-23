@@ -1,11 +1,31 @@
-.btn {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+.btn{
+  width: 271px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: $purple;
+  border-radius:  15px 15px 15px 0;
+
+  &.header-btn{
+
+    border-radius:15px;
+
+  }
+
+  &:hover{
+    background-color: #546cc3;
+    transition: 300ms;
+  }
+}
+
+.btn-text {
+  margin: 21px 87px;
   color: #FFFFFF;
   font-weight: 500;
   font-size: 25px;
   line-height: 38px;
   text-decoration: none;
+
+
 
 }

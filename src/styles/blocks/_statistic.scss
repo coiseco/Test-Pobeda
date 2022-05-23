@@ -1,0 +1,101 @@
+.statistic {
+  margin-bottom: 359px;
+}
+
+.statistic-inner {
+  @include inner;
+}
+
+.statistic-brends-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.brends-title {
+  margin-bottom: 22px;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 105px;
+  color: #1c2323;
+}
+
+.brends-list {
+  display: flex;
+  align-items: center;
+}
+
+.brands-img {
+  margin-left: 90px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.statistic-list {
+  margin-top: 62px;
+  display: flex;
+  flex-direction: row;
+}
+
+.description-area {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba($purple, 0.2);
+  ;
+}
+
+.statistic-description {
+  width: 997px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.description-titles {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 123px 117px;
+  color: $purple;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.statistic-title {
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 105px;
+}
+
+.statistic-text {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.description-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 137px;
+}
+
+.text {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 38px;
+  color: #000;
+}
+
+.autograph {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 38px;
+  color: $purple;
+}
+
+
