@@ -5,9 +5,15 @@
 
 .header-inner {
   @include inner;
+
+  @media (max-width:$laptop) {
+    width: 1278px;
+  }
+
 }
 
 .header-wrap {
+  position: relative;
   display: flex;
   justify-content: space-between;
 
@@ -19,14 +25,28 @@
 }
 
 .header-menu{
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+
 }
 
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width:$tablet) {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+  }
+
 }
 
 .menu-item {
@@ -53,9 +73,14 @@
     background: #FEC62D;
   }
 
-
+  @media (max-width:$tablet) {
+    margin-right: 0;
+  }
 
 }
+
+
+
 
 .hidden-border{
   display: none;
@@ -71,11 +96,14 @@
   &.active{
     display: block;
   }
+
 }
 
 
-.menu-link {
 
+.menu-link {
+  display: block;
+  padding-top: 23px ;
   text-decoration: none;
   font-weight: 400;
   font-size: 25px;
@@ -88,6 +116,11 @@
 
   }
 
+  @media (max-width:$laptop) {
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 28px;
+  }
 
 }
 
@@ -99,3 +132,27 @@
 }
 
 
+.burger-menu{
+  display: none;
+  position: absolute;
+  top:0;
+  left:45%;
+  height: 80px;
+  border-radius: 15px;
+  background-color: $purple;
+  color: white;
+  border: none;
+  font-family: $font;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 38px;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  cursor: pointer;
+
+  @media (max-width:$tablet) {
+    display: block;
+  }
+}

@@ -6,4 +6,8 @@
 
 body {
   font-family:$font;
+
+  @media (max-width:$tablet) {
+    width: 1278px;
+  }
 }

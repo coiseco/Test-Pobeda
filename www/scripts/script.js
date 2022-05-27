@@ -29,12 +29,20 @@ $(document).ready(function () {
     });
   });
 
+
   //scroll
   $('#contacts').on('click', function () {
 
     $('html, body').animate({
       scrollTop: $(".contact-us").offset().top
     },1000);
-  })
+  });
 
+
+  //menu-burger
+  $('.j-burger').on('click', function (e) {
+    e.preventDefault();
+    $('.j-menu').slideToggle();
+    $('.j-menu').css({"display":"flex"})
+  })
 })
