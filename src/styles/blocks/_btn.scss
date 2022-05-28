@@ -12,15 +12,19 @@
 
   }
 
-
-
-
-
   &:hover{
     background-color: #546cc3;
     transition: 300ms;
   }
+
+  @media (max-width:$laptop) {
+    width: 171px;
+    height: 60px;
+  }
 }
+
+
+
 
 .btn-text {
   margin: 21px 87px;
@@ -30,6 +34,11 @@
   line-height: 38px;
   text-decoration: none;
 
-
+  @media (max-width:$laptop) {
+    margin: 5px 46px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+  }
 
 }

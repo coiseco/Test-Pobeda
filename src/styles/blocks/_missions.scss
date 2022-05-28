@@ -4,6 +4,11 @@
 
 .mission-inner {
   @include inner;
+
+
+  @media (max-width:$laptop) {
+    width: 1278px;
+  }
 }
 
 .mission-wraper {

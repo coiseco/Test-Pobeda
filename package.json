@@ -16,5 +16,8 @@
     "gulp-sourcemaps": "^3.0.0",
     "node-sass": "^7.0.1",
     "sass": "^1.46.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }

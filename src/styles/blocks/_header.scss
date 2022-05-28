@@ -22,13 +22,19 @@
 .header-logo {
   display: flex;
   align-items: center;
+
+  @media (max-width:$laptop) {
+    height: 60px;
+  }
 }
 
-.header-menu{
-  // display: flex;
-  // align-items: center;
-
+.header-link{
+  @media (max-width:$laptop) {
+    display: block;
+    height: 60px;
+  }
 }
+
 
 .menu {
   display: flex;
@@ -117,6 +123,7 @@
   }
 
   @media (max-width:$laptop) {
+    padding-top: 17px;
     font-weight: 300;
     font-size: 19px;
     line-height: 28px;

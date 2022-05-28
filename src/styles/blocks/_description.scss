@@ -5,6 +5,10 @@
 
 .description-inner {
   @include inner;
+
+  @media (max-width:$laptop) {
+    width: 1278px;
+  }
 }
 
 .description-wrap {
@@ -15,7 +19,12 @@
 .description-text-wrap {
   display: flex;
   flex-direction: column;
-  margin-right: 97px;
+  margin-right: 37px;
+
+
+  @media (max-width:$laptop) {
+    margin-right: 37px;
+  }
 }
 
 .description-title {
@@ -24,6 +33,13 @@
   line-height: 105px;
   color: $dark;
   margin-bottom: 56px;
+
+
+  @media (max-width:$laptop) {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 85px;
+  }
 }
 
 .description-text {
@@ -32,6 +48,13 @@
   line-height: 45px;
   color: #404242;
   margin-bottom: 50px;
+
+
+  @media (max-width:$laptop) {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+  }
 }
 
 .description-figure-wrap {
@@ -45,6 +68,13 @@
   height: 782px;
   border-radius: 42% 42% 23% 23%;
   background: rgba($purple , .2);
+
+
+  @media (max-width:$laptop) {
+    width: 633px;
+    height: 582px;
+  }
+
 }
 
 
