@@ -12,9 +12,13 @@
 }
 
 .mission-wraper {
-  height: 650px;
+  height: 550px;
   display: flex;
   flex-direction: row;
+}
+
+.mission-img{
+  width: 40%;
 }
 
 .mission-text-wraper {
@@ -30,6 +34,14 @@
   line-height: 60px;
   color: $dark;
   -webkit-text-stroke: 1px black;
+
+
+  @media (max-width:$laptop) {
+    margin-bottom: 34px;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 55px;
+  }
 }
 
 .mission-text {
@@ -37,4 +49,11 @@
   font-size: 30px;
   line-height: 45px;
   color: $green;
+
+
+  @media (max-width:$laptop) {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 38px;
+  }
 }

@@ -4,6 +4,10 @@
 
 .contact-us-inner {
   @include inner;
+
+  @media (max-width:$laptop) {
+    width: 1278px;
+  }
 }
 
 .contact-wraper {
@@ -23,6 +27,14 @@
   font-size: 70px;
   line-height: 105px;
   color: #1c2323;
+  white-space: nowrap;
+
+
+  @media (max-width:$laptop) {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 105px;
+  }
 }
 
 .contact-us-text {
@@ -31,6 +43,13 @@
   font-size: 25px;
   line-height: 38px;
   color: $green;
+
+
+  @media (max-width:$laptop) {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 38px;
+  }
 }
 
 .contact-us-line {
@@ -50,11 +69,20 @@
   margin-left: 105px;
   width: 1105px;
   border: 1px solid black;
+
+
+  @media (max-width:$laptop) {
+    margin-left: 105px;
+  }
 }
 
 .form {
   display: flex;
   flex-wrap: wrap;
+
+  &.btn-field{
+    flex-wrap: nowrap;
+  }
 }
 
 .form-field {
@@ -65,12 +93,22 @@
 
   &.field-half {
     flex-basis: calc(50% - 108px);
+
+
+    @media (max-width:$laptop) {
+      flex-basis: 46%;
+    }
   }
 
   &.btn-field {
     margin-left: 0;
     flex-basis: calc(50% - 280px);
 
+
+    @media (max-width:$laptop) {
+      margin-left: 130px;
+      flex-basis: 19%;
+    }
   }
 }
 
@@ -80,6 +118,12 @@
   font-size: 25px;
   line-height: 38px;
   color: $purple;
+
+
+  @media (max-width:$laptop) {
+    font-size: 22px;
+    line-height: 38px;
+  }
 }
 
 .last-label {
@@ -88,6 +132,12 @@
   font-size: 25px;
   line-height: 38px;
   color: $purple;
+
+
+  @media (max-width:$laptop) {
+    font-size: 22px;
+    line-height: 36px;
+  }
 }
 
 .form-input {
@@ -100,6 +150,11 @@
   border-bottom: 1px solid black;
   background-color: rgba(0, 0, 0, 0);
 
+
+  @media (max-width:$laptop) {
+    font-size: 12px;
+    line-height: 38px;
+  }
 }
 
 .form-textarea {
@@ -108,6 +163,11 @@
   resize: vertical;
   border: none;
   outline: none;
+
+  @media (max-width:$laptop) {
+    width: 400px;
+    height: 100px;
+  }
 }
 
 .button {
@@ -125,5 +185,12 @@
 
   &:hover{
     background-color: rgba($purple, .65);
+  }
+
+
+  @media (max-width:$laptop) {
+    margin-top: 86px;
+    width: 171px;
+    height: 60px;
   }
 }

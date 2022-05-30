@@ -4,12 +4,20 @@
 
 .statistic-inner {
   @include inner;
+
+  @media (max-width:$laptop) {
+    width: 1278px;
+  }
 }
 
 .statistic-brends-wrap {
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  @media (max-width:$laptop) {
+    align-items: unset;
+  }
 }
 
 .brends-title {
@@ -18,11 +26,24 @@
   font-size: 70px;
   line-height: 105px;
   color: #1c2323;
+
+
+  @media (max-width:$laptop) {
+    text-align: center;
+    font-weight: 600;
+    font-size: 59px;
+  }
 }
 
 .brends-list {
   display: flex;
   align-items: center;
+
+
+  @media (max-width:$laptop) {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .brands-img {
@@ -31,19 +52,39 @@
   &:first-child {
     margin-left: 0;
   }
+
+
+  @media (max-width:$laptop) {
+    width: 13%;
+  }
 }
 
 .statistic-list {
   margin-top: 62px;
   display: flex;
   flex-direction: row;
+
+
+  @media (max-width:$laptop) {
+    width: 60%;
+  }
+}
+
+.girl-img{
+  @media (max-width:$laptop) {
+    width: 58%;
+  }
 }
 
 .description-area {
   display: flex;
   flex-direction: column;
   background-color: rgba($purple, 0.2);
-  ;
+
+
+  @media (max-width:$laptop) {
+    width: 109%;
+  }
 }
 
 .statistic-description {
@@ -51,7 +92,15 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+
+
+  @media (max-width:$laptop) {
+    justify-content: unset;
+    margin-left: 137px;
+  }
 }
+
+
 
 .statistic-description-titles {
   display: flex;
@@ -62,18 +111,37 @@
   &:first-child {
     margin-left: 0;
   }
+
+
+  @media (max-width:$laptop) {
+    margin: 19px 0 38px 117px;
+  }
 }
 
 .statistic-title {
   font-weight: 800;
   font-size: 70px;
   line-height: 105px;
+
+
+  @media (max-width:$laptop) {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 105px;
+  }
 }
 
 .statistic-text {
   font-weight: 600;
   font-size: 30px;
   line-height: 45px;
+
+
+  @media (max-width:$laptop) {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 31px;
+  }
 }
 
 .statistic-description-text {
@@ -88,6 +156,13 @@
   font-size: 25px;
   line-height: 38px;
   color: #000;
+
+
+  @media (max-width:$laptop) {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 38px;
+  }
 }
 
 .autograph {
@@ -96,6 +171,10 @@
   font-size: 25px;
   line-height: 38px;
   color: $purple;
+
+
+  @media (max-width:$laptop) {
+    font-size: 20px;
+    line-height: 38px;
+  }
 }
-
-
